@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	uint8_t *buf;
 	size_t size;
 
-	if (argc < 3) {
+	if (argc < 4) {
 		printf("usage: %s [infile] [fontname] [outfile]\n", argv[0]);
 		goto fin0;
 	}
