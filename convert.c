@@ -18,7 +18,7 @@ static int create_zi_header(struct zi_header *h, char *fontname, int xsize, int 
 
 	memset(h, 0, sizeof(*h));
 	poke_le32(&h->identifier, ZI_MAGIC);
-	poke_le16(&h->codepage, CODETYPE_ASCII);
+	poke_le16(&h->codepage, CODETYPE);
 	h->xsize = xsize;
 	h->ysize = ysize;
 	h->start_low = ASCII_START;

@@ -2,7 +2,7 @@ CC = cc
 
 TARGET = zi_fch
 OBJ = memio.o parse.o load.o main.o convert.o
-CFLAGS = -O2 -Wall
+CFLAGS = -O2 -Wall -DCODETYPE=0x03	#ISO-8859-1
 
 all:	$(TARGET)
 
